@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
   
   <title>Frontend Mentor | E-commerce product page</title>
 
@@ -323,7 +323,7 @@
   <div id="whole">
   <div id="header">
 	  <div id="topLeft">
-		  <img src="images/logo.svg" class="logo">
+		  <img src="/logo.svg" class="logo">
 		  <div id="icon1"><h3 id="collections">Collections</h3></div>
 		  <div id="icon2"><h3 id="men">Men</h3></div>
 		  <div id="icon3"><h3 id="women">Women</h3></div>
@@ -331,21 +331,21 @@
 		  <div id="icon5"><h3 id="contact">Contact</h3></div>
 	   </div>
 	   <div id="topRight">
-		  <img src="images/icon-cart.svg" id="iconCart">
-		  <img src="images/image-avatar.png" class="avatar" id="avatar">
+		  <img src="/icon-cart.svg" id="iconCart">
+		  <img src="/image-avatar.png" class="avatar" id="avatar">
 	  </div>
   </div>
   
     <div id="content">
 	<div id="left">
 		<div id="leftUp">
-			<img src="images/image-product-1.jpg" id="imgCurrent">
+			<img src="/image-product-1.jpg" id="imgCurrent">
 		</div>
 		<div id="leftBottom">
-			<img src="images/image-product-1-thumbnail.jpg" id="img1" class="selectedImg">
-			<img src="images/image-product-2-thumbnail.jpg" id="img2" class="imgBottom">
-			<img src="images/image-product-3-thumbnail.jpg" id="img3" class="imgBottom">
-			<img src="images/image-product-4-thumbnail.jpg" id="img4" class="imgBottom">
+			<img src="/image-product-1-thumbnail.jpg" id="img1" class="selectedImg">
+			<img src="/image-product-2-thumbnail.jpg" id="img2" class="imgBottom">
+			<img src="/image-product-3-thumbnail.jpg" id="img3" class="imgBottom">
+			<img src="/image-product-4-thumbnail.jpg" id="img4" class="imgBottom">
 		</div>
 	</div>
 	
@@ -368,9 +368,9 @@
 			
 			<div id="cart">
 				  <div id="cartLeft">
-				  <img src="images/icon-minus.svg" id="minus" class="add">
+				  <img src="/icon-minus.svg" id="minus" class="add">
 				  <p id="nItems">0</p>
-				  <img src="images/icon-plus.svg" id="plus" class="add">
+				  <img src="/icon-plus.svg" id="plus" class="add">
 				  </div>
 				  <div id="button">
 						<p id="btnText">Add to cart</p>
@@ -390,17 +390,17 @@
   </div>
   
   <div id="popup" class="hidden">
-	<div><img src="images/icon-close.svg" id="closeImg"></div>
+	<div><img src="/icon-close.svg" id="closeImg"></div>
 	<div id="popupUp">
-		<img src="images/icon-previous.svg" id="previous">
-		<img src="images/image-product-1.jpg" id="imgOver">
-		<img src="images/icon-next.svg" id="next">
+		<img src="/icon-previous.svg" id="previous">
+		<img src="/image-product-1.jpg" id="imgOver">
+		<img src="/icon-next.svg" id="next">
 	</div>
 	<div id="popupDown">
-		<img src="images/image-product-1-thumbnail.jpg" id="over1" class="selectedOver">
-		<img src="images/image-product-2-thumbnail.jpg" id="over2" class="imgBottomOver">
-		<img src="images/image-product-3-thumbnail.jpg" id="over3" class="imgBottomOver">
-		<img src="images/image-product-4-thumbnail.jpg" id="over4" class="imgBottomOver">
+		<img src="/image-product-1-thumbnail.jpg" id="over1" class="selectedOver">
+		<img src="/image-product-2-thumbnail.jpg" id="over2" class="imgBottomOver">
+		<img src="/image-product-3-thumbnail.jpg" id="over3" class="imgBottomOver">
+		<img src="/image-product-4-thumbnail.jpg" id="over4" class="imgBottomOver">
 	</div>
   </div>
   
@@ -438,7 +438,7 @@
 			
 		var io1=document.getElementById("over1");
 		io1.addEventListener("click",function(){
-			document.getElementById("imgOver").src="images/image-product-1.jpg";
+			document.getElementById("imgOver").src="/image-product-1.jpg";
 			document.getElementsByClassName("selectedImg")[0].className="imgBottom";
 			document.getElementById("img1").className="selectedImg";
 			document.getElementsByClassName("selectedOver")[0].className="imgBottomOver";
@@ -446,7 +446,7 @@
 		});
 		var io2=document.getElementById("over2");
 		io2.addEventListener("click",function(){
-			document.getElementById("imgOver").src="images/image-product-2.jpg";
+			document.getElementById("imgOver").src="/image-product-2.jpg";
 			document.getElementsByClassName("selectedImg")[0].className="imgBottom";
 			document.getElementById("img2").className="selectedImg";
 			document.getElementsByClassName("selectedOver")[0].className="imgBottomOver";
@@ -454,7 +454,7 @@
 		});
 		var io3=document.getElementById("over3");
 		io3.addEventListener("click",function(){
-			document.getElementById("imgOver").src="images/image-product-3.jpg";
+			document.getElementById("imgOver").src="/image-product-3.jpg";
 			document.getElementsByClassName("selectedImg")[0].className="imgBottom";
 			document.getElementById("img3").className="selectedImg";
 			document.getElementsByClassName("selectedOver")[0].className="imgBottomOver";
@@ -462,7 +462,7 @@
 		});
 		var io4=document.getElementById("over4");
 		io4.addEventListener("click",function(){
-			document.getElementById("imgOver").src="images/image-product-4.jpg";
+			document.getElementById("imgOver").src="/image-product-4.jpg";
 			document.getElementsByClassName("selectedImg")[0].className="imgBottom";
 			document.getElementById("img4").className="selectedImg";
 			document.getElementsByClassName("selectedOver")[0].className="imgBottomOver";
@@ -500,28 +500,28 @@
 	function foreward(){
 		switch(document.getElementsByClassName("selectedImg")[0].id){
 			case "img1":
-				document.getElementById("imgOver").src="images/image-product-2.jpg";
+				document.getElementById("imgOver").src="/image-product-2.jpg";
 				document.getElementsByClassName("selectedImg")[0].className="imgBottom";
 				document.getElementById("img2").className="selectedImg";
 				document.getElementsByClassName("selectedOver")[0].className="imgBottomOver";
 				document.getElementById("over2").className="selectedOver";
 			break;
 			case "img2":
-				document.getElementById("imgOver").src="images/image-product-3.jpg";
+				document.getElementById("imgOver").src="/image-product-3.jpg";
 				document.getElementsByClassName("selectedImg")[0].className="imgBottom";
 				document.getElementById("img3").className="selectedImg";
 				document.getElementsByClassName("selectedOver")[0].className="imgBottomOver";
 				document.getElementById("over3").className="selectedOver";
 			break;
 			case "img3":
-				document.getElementById("imgOver").src="images/image-product-4.jpg";
+				document.getElementById("imgOver").src="/image-product-4.jpg";
 				document.getElementsByClassName("selectedImg")[0].className="imgBottom";
 				document.getElementById("img4").className="selectedImg";
 				document.getElementsByClassName("selectedOver")[0].className="imgBottomOver";
 				document.getElementById("over4").className="selectedOver";
 			break;
 			case "img4":
-				document.getElementById("imgOver").src="images/image-product-1.jpg";
+				document.getElementById("imgOver").src="/image-product-1.jpg";
 				document.getElementsByClassName("selectedImg")[0].className="imgBottom";
 				document.getElementById("img1").className="selectedImg";
 				document.getElementsByClassName("selectedOver")[0].className="imgBottomOver";
@@ -533,28 +533,28 @@
 	function backward(){
 		switch(document.getElementsByClassName("selectedImg")[0].id){
 			case "img1":
-				document.getElementById("imgOver").src="images/image-product-4.jpg";
+				document.getElementById("imgOver").src="/image-product-4.jpg";
 				document.getElementsByClassName("selectedImg")[0].className="imgBottom";
 				document.getElementById("img4").className="selectedImg";
 				document.getElementsByClassName("selectedOver")[0].className="imgBottomOver";
 				document.getElementById("over4").className="selectedOver";
 			break;
 			case "img2":
-				document.getElementById("imgOver").src="images/image-product-1.jpg";
+				document.getElementById("imgOver").src="/image-product-1.jpg";
 				document.getElementsByClassName("selectedImg")[0].className="imgBottom";
 				document.getElementById("img1").className="selectedImg";
 				document.getElementsByClassName("selectedOver")[0].className="imgBottomOver";
 				document.getElementById("over1").className="selectedOver";
 			break;
 			case "img3":
-				document.getElementById("imgOver").src="images/image-product-2.jpg";
+				document.getElementById("imgOver").src="/image-product-2.jpg";
 				document.getElementsByClassName("selectedImg")[0].className="imgBottom";
 				document.getElementById("img2").className="selectedImg";
 				document.getElementsByClassName("selectedOver")[0].className="imgBottomOver";
 				document.getElementById("over2").className="selectedOver";
 			break;
 			case "img4":
-				document.getElementById("imgOver").src="images/image-product-3.jpg";
+				document.getElementById("imgOver").src="/image-product-3.jpg";
 				document.getElementsByClassName("selectedImg")[0].className="imgBottom";
 				document.getElementById("img3").className="selectedImg";
 				document.getElementsByClassName("selectedOver")[0].className="imgBottomOver";
@@ -568,7 +568,7 @@
 			
 		var io1=document.getElementById("over1");
 		io1.addEventListener("click",function(){
-			document.getElementById("imgOver").src="images/image-product-1.jpg";
+			document.getElementById("imgOver").src="/image-product-1.jpg";
 			document.getElementsByClassName("selectedImg")[0].className="imgBottom";
 			document.getElementById("img1").className="selectedImg";
 			document.getElementsByClassName("selectedOver")[0].className="imgBottomOver";
@@ -576,7 +576,7 @@
 		});
 		var io2=document.getElementById("over2");
 		io2.addEventListener("click",function(){
-			document.getElementById("imgOver").src="images/image-product-2.jpg";
+			document.getElementById("imgOver").src="/image-product-2.jpg";
 			document.getElementsByClassName("selectedImg")[0].className="imgBottom";
 			document.getElementById("img2").className="selectedImg";
 			document.getElementsByClassName("selectedOver")[0].className="imgBottomOver";
@@ -584,7 +584,7 @@
 		});
 		var io3=document.getElementById("over3");
 		io3.addEventListener("click",function(){
-			document.getElementById("imgOver").src="images/image-product-3.jpg";
+			document.getElementById("imgOver").src="/image-product-3.jpg";
 			document.getElementsByClassName("selectedImg")[0].className="imgBottom";
 			document.getElementById("img3").className="selectedImg";
 			document.getElementsByClassName("selectedOver")[0].className="imgBottomOver";
@@ -592,7 +592,7 @@
 		});
 		var io4=document.getElementById("over4");
 		io4.addEventListener("click",function(){
-			document.getElementById("imgOver").src="images/image-product-4.jpg";
+			document.getElementById("imgOver").src="/image-product-4.jpg";
 			document.getElementsByClassName("selectedImg")[0].className="imgBottom";
 			document.getElementById("img4").className="selectedImg";
 			document.getElementsByClassName("selectedOver")[0].className="imgBottomOver";
@@ -715,7 +715,7 @@
 			subItem.setAttribute("class","subItem");
 			
 			var newImg=document.createElement("img");
-			newImg.setAttribute("src","images/image-product-1-thumbnail.jpg");
+			newImg.setAttribute("src","/image-product-1-thumbnail.jpg");
 			newImg.setAttribute("id","imgItemSN");
 			newImg.setAttribute("class","imgItem");
 			
@@ -729,7 +729,7 @@
 			subItem.appendChild(text);
 			
 			var newDelete=document.createElement("img");
-			newDelete.setAttribute("src","images/icon-delete.svg");
+			newDelete.setAttribute("src","/icon-delete.svg");
 			newDelete.setAttribute("id","delItemSN");
 			newDelete.setAttribute("class","delItem");
 			
@@ -758,7 +758,7 @@
 			subItem.setAttribute("class","subItem");
 			
 			var newImg=document.createElement("img");
-			newImg.setAttribute("src","images/image-product-1-thumbnail.jpg");
+			newImg.setAttribute("src","/image-product-1-thumbnail.jpg");
 			newImg.setAttribute("id","imgItemSN");
 			newImg.setAttribute("class","imgItem");
 			
@@ -772,7 +772,7 @@
 			subItem.appendChild(text);
 			
 			var newDelete=document.createElement("img");
-			newDelete.setAttribute("src","images/icon-delete.svg");
+			newDelete.setAttribute("src","/icon-delete.svg");
 			newDelete.setAttribute("id","delItemSN");
 			newDelete.setAttribute("class","delItem");
 			
